@@ -46,4 +46,5 @@ MonoBehaviour:
   powerupPrefabs:
   - {fileID: 9142928834092208346, guid: 30081b6f435943f48951f5a8d7f9091d, type: 3}
   - {fileID: 5099601549967663449, guid: 8ba2359a4ca5530478583d62e5513401, type: 3}
+  - {fileID: 5099601549967663449, guid: 4c0a8e84b1b1ac648a7888c4ceca7d4c, type: 3}
   spawnTime: 15
