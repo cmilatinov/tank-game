@@ -25,7 +25,7 @@ namespace Multiplayer {
         }
 
         public override void OnJoinedRoom() {
-            Player.PlayerNumber = PhotonNetwork.PlayerList.Length;
+            PlayerTank.PlayerNumber = PhotonNetwork.PlayerList.Length;
             PhotonNetwork.LoadLevel("Game");
         }
         

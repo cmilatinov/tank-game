@@ -24,7 +24,7 @@ namespace UI {
         }
 
         public void OnClickRespawn() {
-            PlayerSpawn.Instance.SpawnPlayer();
+            PlayerTankSpawner.Instance.SpawnPlayer();
             canvas.gameObject.SetActive(false);
         }
 

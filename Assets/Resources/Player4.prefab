@@ -401,12 +401,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ForwardSpeed: 4
   m_RotationSpeed: 150
-  m_TurretHead: {fileID: 209297816914965238}
+  m_TurretHead: {fileID: 5289323806976719665}
   m_ProjectilePrefab: {fileID: 1449870570657687128, guid: d346a79e3bfb22a4b9e62452a046d611, type: 3}
   m_MuzzleFlashPrefab: {fileID: 5865868290920950645, guid: e4fc13f0b91963d40a44f5fca68df255, type: 3}
   m_Barrel: {fileID: 2364148304965844574}
   m_FireRate: 1
-  m_RecoilForce: 10
+  m_RecoilForce: 5
+  m_TripleShots: 0
+  m_TripleShotAngle: 5
+  m_TripleShotOffset: 0.5
+  m_RicochetShots: 0
+  m_RicochetBounces: 3
+  photonView: {fileID: 6298938568771358513}
 --- !u!114 &6298938568771358513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,10 +428,11 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
+  Synchronization: 1
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 931042589404408596}
   - {fileID: 564487463738602047}
   - {fileID: 6408721756665459386}
   sceneViewId: 0
@@ -446,7 +453,7 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
-  m_UseLocal: 1
+  m_UseLocal: 0
 --- !u!114 &6408721756665459386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +469,7 @@ MonoBehaviour:
   maxHealth: 200
   health: 0
   photonView: {fileID: 6298938568771358513}
+  tripleShots: 0
 --- !u!1 &4932040594281923661
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,19 +627,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f0c03a3e40b9d3f4c8336b6d69c58593, type: 3}
   m_PrefabInstance: {fileID: 6093291379701406013}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &209297816914965238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3019896442729334201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be0a24757e507e4bb9a12797a81c622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mRotationSpeed: 10
 --- !u!114 &2238047378230307564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,3 +666,16 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &5289323806976719665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019896442729334201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be0a24757e507e4bb9a12797a81c622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mRotationSpeed: 4

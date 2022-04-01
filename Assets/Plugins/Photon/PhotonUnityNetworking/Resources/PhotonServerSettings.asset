@@ -41,6 +41,11 @@ MonoBehaviour:
   - RespawnSpaceship
   - TakeDamage
   - Shoot
+  - SpawnMuzzle
+  - AddTripleShots
+  - GiveHealth
+  - AddRicochetShots
+  - SetBounces
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

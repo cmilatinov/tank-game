@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Reticle
   - Zombie
+  - NavMesh
   layers:
   - Default
   - TransparentFX

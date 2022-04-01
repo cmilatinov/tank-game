@@ -190,9 +190,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!65 &8014930098142132551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,11 +221,12 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
+  Synchronization: 1
+  OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
   - {fileID: 3392200677667133600}
+  - {fileID: 306701073642750758}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -259,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 30
+  numBounces: 0
   rigidbody: {fileID: 7236908271644965791}
   projectileHitPrefab: {fileID: 5865868290920950645, guid: c5836ca08bd92cb4a9c7bc836cfd1c0e, type: 3}
   photonView: {fileID: 6529366120778766909}
@@ -5020,7 +5022,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5115,7 +5117,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1

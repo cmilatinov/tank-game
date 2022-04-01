@@ -376,7 +376,13 @@ MonoBehaviour:
   m_MuzzleFlashPrefab: {fileID: 5865868290920950645, guid: e4fc13f0b91963d40a44f5fca68df255, type: 3}
   m_Barrel: {fileID: 452876431796342639}
   m_FireRate: 1
-  m_RecoilForce: 10
+  m_RecoilForce: 5
+  m_TripleShots: 0
+  m_TripleShotAngle: 5
+  m_TripleShotOffset: 0.5
+  m_RicochetShots: 0
+  m_RicochetBounces: 3
+  photonView: {fileID: 6298938568771358513}
 --- !u!114 &6298938568771358513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,10 +398,11 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
+  Synchronization: 1
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 931042589404408596}
   - {fileID: 564487463738602047}
   - {fileID: 6408721756665459386}
   sceneViewId: 0
@@ -416,7 +423,7 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
-  m_UseLocal: 1
+  m_UseLocal: 0
 --- !u!114 &6408721756665459386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +439,7 @@ MonoBehaviour:
   maxHealth: 200
   health: 0
   photonView: {fileID: 6298938568771358513}
+  tripleShots: 0
 --- !u!1 &4932040594281923661
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,4 +678,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be0a24757e507e4bb9a12797a81c622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRotationSpeed: 10
+  mRotationSpeed: 5

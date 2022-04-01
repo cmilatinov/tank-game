@@ -1,5 +1,4 @@
-﻿using Multiplayer;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Gameplay {
     public class HealthBar : MonoBehaviour {
